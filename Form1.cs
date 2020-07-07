@@ -178,5 +178,10 @@ namespace BS_Notatnik
         {
             Application.Exit();
         }
+
+        private void edycjaZaznaczWszystko_Click(object sender, EventArgs e)
+        {
+            openedFile.SelectAll();
+        }
     }
 }

@@ -41,11 +41,6 @@
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
             this.plikZakoncz = new System.Windows.Forms.ToolStripMenuItem();
             this.edycjaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.formatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.widokToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pomocToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.openedFile = new System.Windows.Forms.RichTextBox();
             this.edycjaCofnij = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripSeparator();
             this.edycjaWytnij = new System.Windows.Forms.ToolStripMenuItem();
@@ -62,17 +57,22 @@
             this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripSeparator();
             this.edycjaZaznaczWszystko = new System.Windows.Forms.ToolStripMenuItem();
             this.edycjaGodzinaData = new System.Windows.Forms.ToolStripMenuItem();
+            this.formatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.formatZawijanieWierszy = new System.Windows.Forms.ToolStripMenuItem();
             this.formatCzcionka = new System.Windows.Forms.ToolStripMenuItem();
+            this.widokToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.widokPowiekszenie = new System.Windows.Forms.ToolStripMenuItem();
             this.widokPowiekszeniePowieksz = new System.Windows.Forms.ToolStripMenuItem();
             this.widokPowiekszeniePomniejsz = new System.Windows.Forms.ToolStripMenuItem();
             this.widokPowiekszeniePrzywroc = new System.Windows.Forms.ToolStripMenuItem();
             this.widokPasekStanu = new System.Windows.Forms.ToolStripMenuItem();
+            this.pomocToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.opmocWyswietlPomoc = new System.Windows.Forms.ToolStripMenuItem();
             this.pomocWyslijOpinie = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripSeparator();
             this.pomocInformacje = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.openedFile = new System.Windows.Forms.RichTextBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -182,61 +182,6 @@
             this.edycjaToolStripMenuItem.Size = new System.Drawing.Size(53, 21);
             this.edycjaToolStripMenuItem.Text = "Edycja";
             // 
-            // formatToolStripMenuItem
-            // 
-            this.formatToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.formatZawijanieWierszy,
-            this.formatCzcionka});
-            this.formatToolStripMenuItem.Name = "formatToolStripMenuItem";
-            this.formatToolStripMenuItem.Size = new System.Drawing.Size(57, 21);
-            this.formatToolStripMenuItem.Text = "Format";
-            // 
-            // widokToolStripMenuItem
-            // 
-            this.widokToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.widokPowiekszenie,
-            this.widokPasekStanu});
-            this.widokToolStripMenuItem.Name = "widokToolStripMenuItem";
-            this.widokToolStripMenuItem.Size = new System.Drawing.Size(53, 21);
-            this.widokToolStripMenuItem.Text = "Widok";
-            // 
-            // pomocToolStripMenuItem
-            // 
-            this.pomocToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.opmocWyswietlPomoc,
-            this.pomocWyslijOpinie,
-            this.toolStripMenuItem6,
-            this.pomocInformacje});
-            this.pomocToolStripMenuItem.Name = "pomocToolStripMenuItem";
-            this.pomocToolStripMenuItem.Size = new System.Drawing.Size(57, 21);
-            this.pomocToolStripMenuItem.Text = "Pomoc";
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.plikToolStripMenuItem,
-            this.edycjaToolStripMenuItem,
-            this.formatToolStripMenuItem,
-            this.widokToolStripMenuItem,
-            this.pomocToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(3, 3, 0, 0);
-            this.menuStrip1.Size = new System.Drawing.Size(784, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // openedFile
-            // 
-            this.openedFile.Location = new System.Drawing.Point(0, 25);
-            this.openedFile.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.openedFile.Name = "openedFile";
-            this.openedFile.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
-            this.openedFile.Size = new System.Drawing.Size(785, 585);
-            this.openedFile.TabIndex = 1;
-            this.openedFile.Text = "";
-            this.openedFile.TextChanged += new System.EventHandler(this.openedFile_TextChanged);
-            // 
             // edycjaCofnij
             // 
             this.edycjaCofnij.BackColor = System.Drawing.Color.Red;
@@ -331,10 +276,11 @@
             // 
             // edycjaZaznaczWszystko
             // 
-            this.edycjaZaznaczWszystko.BackColor = System.Drawing.Color.Red;
+            this.edycjaZaznaczWszystko.BackColor = System.Drawing.SystemColors.Control;
             this.edycjaZaznaczWszystko.Name = "edycjaZaznaczWszystko";
             this.edycjaZaznaczWszystko.Size = new System.Drawing.Size(297, 22);
             this.edycjaZaznaczWszystko.Text = "Zaznacz wszystko   Ctrl+A";
+            this.edycjaZaznaczWszystko.Click += new System.EventHandler(this.edycjaZaznaczWszystko_Click);
             // 
             // edycjaGodzinaData
             // 
@@ -343,19 +289,37 @@
             this.edycjaGodzinaData.Size = new System.Drawing.Size(297, 22);
             this.edycjaGodzinaData.Text = "Godzina/data   F5";
             // 
+            // formatToolStripMenuItem
+            // 
+            this.formatToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.formatZawijanieWierszy,
+            this.formatCzcionka});
+            this.formatToolStripMenuItem.Name = "formatToolStripMenuItem";
+            this.formatToolStripMenuItem.Size = new System.Drawing.Size(57, 21);
+            this.formatToolStripMenuItem.Text = "Format";
+            // 
             // formatZawijanieWierszy
             // 
             this.formatZawijanieWierszy.BackColor = System.Drawing.Color.Red;
             this.formatZawijanieWierszy.Name = "formatZawijanieWierszy";
-            this.formatZawijanieWierszy.Size = new System.Drawing.Size(180, 22);
+            this.formatZawijanieWierszy.Size = new System.Drawing.Size(165, 22);
             this.formatZawijanieWierszy.Text = "Zawijanie wierszy";
             // 
             // formatCzcionka
             // 
             this.formatCzcionka.BackColor = System.Drawing.Color.Red;
             this.formatCzcionka.Name = "formatCzcionka";
-            this.formatCzcionka.Size = new System.Drawing.Size(180, 22);
+            this.formatCzcionka.Size = new System.Drawing.Size(165, 22);
             this.formatCzcionka.Text = "Czcionka...";
+            // 
+            // widokToolStripMenuItem
+            // 
+            this.widokToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.widokPowiekszenie,
+            this.widokPasekStanu});
+            this.widokToolStripMenuItem.Name = "widokToolStripMenuItem";
+            this.widokToolStripMenuItem.Size = new System.Drawing.Size(53, 21);
+            this.widokToolStripMenuItem.Text = "Widok";
             // 
             // widokPowiekszenie
             // 
@@ -365,7 +329,7 @@
             this.widokPowiekszeniePomniejsz,
             this.widokPowiekszeniePrzywroc});
             this.widokPowiekszenie.Name = "widokPowiekszenie";
-            this.widokPowiekszenie.Size = new System.Drawing.Size(180, 22);
+            this.widokPowiekszenie.Size = new System.Drawing.Size(144, 22);
             this.widokPowiekszenie.Text = "Powiększenie";
             // 
             // widokPowiekszeniePowieksz
@@ -393,8 +357,19 @@
             // 
             this.widokPasekStanu.BackColor = System.Drawing.Color.Red;
             this.widokPasekStanu.Name = "widokPasekStanu";
-            this.widokPasekStanu.Size = new System.Drawing.Size(180, 22);
+            this.widokPasekStanu.Size = new System.Drawing.Size(144, 22);
             this.widokPasekStanu.Text = "Pasek stanu";
+            // 
+            // pomocToolStripMenuItem
+            // 
+            this.pomocToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.opmocWyswietlPomoc,
+            this.pomocWyslijOpinie,
+            this.toolStripMenuItem6,
+            this.pomocInformacje});
+            this.pomocToolStripMenuItem.Name = "pomocToolStripMenuItem";
+            this.pomocToolStripMenuItem.Size = new System.Drawing.Size(57, 21);
+            this.pomocToolStripMenuItem.Text = "Pomoc";
             // 
             // opmocWyswietlPomoc
             // 
@@ -421,6 +396,32 @@
             this.pomocInformacje.Name = "pomocInformacje";
             this.pomocInformacje.Size = new System.Drawing.Size(262, 22);
             this.pomocInformacje.Text = "Blade Studios Notatnik - informacje";
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.plikToolStripMenuItem,
+            this.edycjaToolStripMenuItem,
+            this.formatToolStripMenuItem,
+            this.widokToolStripMenuItem,
+            this.pomocToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(3, 3, 0, 0);
+            this.menuStrip1.Size = new System.Drawing.Size(784, 24);
+            this.menuStrip1.TabIndex = 0;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // openedFile
+            // 
+            this.openedFile.Location = new System.Drawing.Point(0, 25);
+            this.openedFile.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.openedFile.Name = "openedFile";
+            this.openedFile.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
+            this.openedFile.Size = new System.Drawing.Size(785, 585);
+            this.openedFile.TabIndex = 1;
+            this.openedFile.Text = "";
+            this.openedFile.TextChanged += new System.EventHandler(this.openedFile_TextChanged);
             // 
             // Form1
             // 
