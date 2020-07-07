@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.SqlServer.Server;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -187,6 +188,14 @@ namespace BS_Notatnik
         private void edycjaKopiuj_Click(object sender, EventArgs e)
         {
             Clipboard.SetText(openedFile.SelectedText);
+        }
+
+        private void edycjaWklej_Click(object sender, EventArgs e)
+        {
+            if(Clipboard.ContainsText())
+            {
+                openedFile.Paste();
+            }
         }
     }
 }

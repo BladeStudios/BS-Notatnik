@@ -211,10 +211,11 @@
             // 
             // edycjaWklej
             // 
-            this.edycjaWklej.BackColor = System.Drawing.Color.Red;
+            this.edycjaWklej.BackColor = System.Drawing.SystemColors.Control;
             this.edycjaWklej.Name = "edycjaWklej";
             this.edycjaWklej.Size = new System.Drawing.Size(297, 22);
             this.edycjaWklej.Text = "Wklej   Ctrl+V";
+            this.edycjaWklej.Click += new System.EventHandler(this.edycjaWklej_Click);
             // 
             // edycjaUsun
             // 
