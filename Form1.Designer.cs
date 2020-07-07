@@ -203,10 +203,11 @@
             // 
             // edycjaKopiuj
             // 
-            this.edycjaKopiuj.BackColor = System.Drawing.Color.Red;
+            this.edycjaKopiuj.BackColor = System.Drawing.SystemColors.Control;
             this.edycjaKopiuj.Name = "edycjaKopiuj";
             this.edycjaKopiuj.Size = new System.Drawing.Size(297, 22);
             this.edycjaKopiuj.Text = "Kopiuj   Ctrl+C";
+            this.edycjaKopiuj.Click += new System.EventHandler(this.edycjaKopiuj_Click);
             // 
             // edycjaWklej
             // 

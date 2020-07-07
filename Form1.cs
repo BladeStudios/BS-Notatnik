@@ -183,5 +183,10 @@ namespace BS_Notatnik
         {
             openedFile.SelectAll();
         }
+
+        private void edycjaKopiuj_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(openedFile.SelectedText);
+        }
     }
 }
