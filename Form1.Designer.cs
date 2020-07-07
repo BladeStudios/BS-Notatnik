@@ -196,10 +196,11 @@
             // 
             // edycjaWytnij
             // 
-            this.edycjaWytnij.BackColor = System.Drawing.Color.Red;
+            this.edycjaWytnij.BackColor = System.Drawing.SystemColors.Control;
             this.edycjaWytnij.Name = "edycjaWytnij";
             this.edycjaWytnij.Size = new System.Drawing.Size(297, 22);
             this.edycjaWytnij.Text = "Wytnij   Ctrl+X";
+            this.edycjaWytnij.Click += new System.EventHandler(this.edycjaWytnij_Click);
             // 
             // edycjaKopiuj
             // 

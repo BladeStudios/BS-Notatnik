@@ -197,5 +197,11 @@ namespace BS_Notatnik
                 openedFile.Paste();
             }
         }
+
+        private void edycjaWytnij_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(openedFile.SelectedText);
+            openedFile.SelectedText = "";
+        }
     }
 }
