@@ -220,10 +220,11 @@
             // 
             // edycjaUsun
             // 
-            this.edycjaUsun.BackColor = System.Drawing.Color.Red;
+            this.edycjaUsun.BackColor = System.Drawing.SystemColors.Control;
             this.edycjaUsun.Name = "edycjaUsun";
             this.edycjaUsun.Size = new System.Drawing.Size(297, 22);
             this.edycjaUsun.Text = "Usuń   Del";
+            this.edycjaUsun.Click += new System.EventHandler(this.edycjaUsun_Click);
             // 
             // toolStripMenuItem4
             // 

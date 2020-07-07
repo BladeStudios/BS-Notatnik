@@ -203,5 +203,10 @@ namespace BS_Notatnik
             Clipboard.SetText(openedFile.SelectedText);
             openedFile.SelectedText = "";
         }
+
+        private void edycjaUsun_Click(object sender, EventArgs e)
+        {
+            openedFile.SelectedText = "";
+        }
     }
 }
